@@ -7,7 +7,7 @@ def repaintFence():
     ans = 0
     for i in range(n):
         j = i - 1 if i-1 >= 0 else 0
-        # Prefix[i] says that => from 0 to i prefix[i] flips has been made
+        # Prefix[i] says that => from 0 to i, prefix[i] flips has been made
         # It will indicate how many times a character has been flipped.
         prefix[i] += prefix[j]
 
